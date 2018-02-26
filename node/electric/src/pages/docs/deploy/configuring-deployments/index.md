@@ -56,7 +56,7 @@ To learn more about an individual configuration, click on a key in the table bel
 | **[cpu](#scale)**                   | Number  | 1       | Number of processing units          |
 | **[scale](#scale)**                 | Number  | 1       | Maximum number of instances         |
 | **[memory](#scale)**                | Number  | 512     | Amount of computing memory          |
-| **[volume](#volume)**               | String  |         | Persistent database storage         |
+| **[volumes](#volumes)**             | Object  |         | Persistent database file system     |
 | **[customDomains](#customDomains)** | Array   |         | Set custom domain names             |
 | **[healthCheck](#healthCheck)**     | Object  |         | How the services' health is checked |
 | **[dependencies](#dependencies)**   | Array   |         | Deployment dependency order         |
@@ -214,18 +214,49 @@ There are three ways to scale your application.
 
 The available resources for these variables are dependent upon the usage limits of your WeDeploy plan. To learn more about upgrading your plan, see our [Pricing Page](https://wedeploy.com/#pricing).
 
-<h4 id="volume">volume</h4>
+<h4 id="volumes">volumes</h4>
 
-For many applications, it is necessary to be able to write and access a persistent file system so that your important files can keep their state even after re-deployment or restarting your service. We make this possible with `volumes`. Each service, allows you to mount an independent volume file system (e.g. `var/lib/app`). Because these file systems are unique to each service, you do not have to worry about your services overwriting changes or files made by other services in your project, even if you declare the same volume path for multiple services.
-
-**Note:** Once you delete your project, any files in the volumes will also be destroyed.
+For many applications, it is necessary to be able to write and access a persistent file system so that your important files can keep their state even after re-deployment or restarting your service. We make this possible with `volumes`. 
 
 ```application/json
 {
   "id": "app",
-  "volume": "/opt/app/data"
+  "volumes": {
+    "foo": "/docs/",
+    "bar": "/db/files"
+  }
 }
 ```
+
+Each volume (or file system drive), is mounted with a unique `id` that can be accessed by any service in that project. For example, if you create service1 and deploy with a volume declared as `photos`, you can access that same volume with service2 by declaring the same volume `id`.
+
+In this scenario, this is how the services would connect to the volumes via their `wedeploy.json`:
+
+**service1**
+
+```application/json
+{
+  "id": "service1",
+  "volumes": {
+    "photos": "/photos"
+  }
+}
+```
+
+**service2**
+
+```application/json
+{
+  "id": "service2",
+  "volumes": {
+    "photos": "/myapp/photos"
+  }
+}
+```
+
+In this example, the `photos` volume will be shared and both services can access the files within that volume by the declared paths. 
+
+**Note:** Once you delete your project, any files in the volumes will also be destroyed.
 
 <h4 id="customDomains">customDomains</h4>
 
