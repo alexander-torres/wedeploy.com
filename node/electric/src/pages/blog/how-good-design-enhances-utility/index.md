@@ -1,23 +1,19 @@
 ---
 title: "How Good Design Enhances Utility"
 description: "When building a great product, it inevitably becomes more and more important to consider design. Is the design pleasing? Is it clear? Does it inspire? And, most importantly, is the design of the product coherent with its purpose?"
-date: "March 9, 2018"
-author: "Vitor Fernandes"
-image: "../../../images/blog/post-22--2.jpg"
+date: "March 12, 2018"
+author: "Jared Gorski"
+image: "../../../images/blog/post-22--6.jpg"
 layout: "blog"
 ---
 
 <article>
 
-<a href="https://wedeploy.com" target="_blank">
-  <figure style="margin-top: -1.5rem">
-    <img src="../../../images/blog/post-22--6.jpg" alt="New WeDeploy 404 Error page">
-  </figure>
-</a>
+<figure style="margin-top: -1.5rem">
+  <img src="../../../images/blog/post-22--6.jpg" alt="Old 404 Error page morphing into new 404 Error page" class="blog-img-shadow">
+</figure>
 
 {$page.description}
-
----
 
 #### The Truth
 
@@ -32,11 +28,19 @@ As cliche as it may seem, *good* design is not at war with function. *Good* desi
 
 The WeDeploy CLI has long been the backbone of the WeDeploy experience. Our users perform many of their most important tasks on our CLI, making it a crucial tool in the WeDeploy workbench. Therefore, the CLI experience must be intuitive. One small way we've now made this tool more friendly to users is a simple redesign of the CLI login page.
 
+As you can see below, our old CLI login page was rather bleak:
+
 <figure>
-  <img src="../../../images/blog/post-22--2.jpg" alt="New WeDeploy CLI login landing page">
+  <img src="../../../images/blog/post-22--5.jpg" alt="Old WeDeploy CLI login landing page" class="blog-img-shadow">
 </figure>
 
-Overall, logging into the CLI is a rather basic aspect of using WeDeploy. However, the login flow is a perfect opportunity to familiarize users with our platform. Our new login page features an interactive demo to prime those who may be new to our CLI, as well as links to more helpful resources. Though this update is relatively small, it is but one step on the journey to building a useful and helpful platform.
+This is our new CLI login page, featuring an interactive demo to prime those who may be new to our CLI, as well as links to more helpful resources. Plus, it's much more friendly to look at:
+
+<figure>
+  <img src="../../../images/blog/post-22--2.jpg" alt="New WeDeploy CLI login landing page" class="blog-img-shadow">
+</figure>
+
+Overall, logging into the CLI is a rather basic aspect of using WeDeploy. However, the login flow is a perfect opportunity to familiarize users with our platform. Though this update is relatively small, it is but one step on the journey to building a useful and helpful platform.
 
 
 #### Every Little Detail
@@ -46,14 +50,14 @@ Another aspect of the site we've redesigned is our error pages. While no one wan
 Here's our old 404 Error page. It's simple and effective, but it remains cold and impersonal:
 
 <figure>
-  <img src="../../../images/blog/post-22--1.jpg" alt="Old WeDeploy 404 Error page">
+  <img src="../../../images/blog/post-22--1.jpg" alt="Old WeDeploy 404 Error page" class="blog-img-shadow">
 </figure>
 
-Contrast that with our **[newly designed 404 Error Page](https://ui-errors.wedeploy.io/error/404.html)**, which invites users to interact with an unassuming and delightful hover animation before resuming their normal tasks:
+Contrast that with our **[newly designed 404 Error Page](https://console.wedeploy.com/darn)**, which invites users to interact with an unassuming and delightful hover animation before resuming their normal tasks:
 
 <figure>
-  <a href="https://ui-errors.wedeploy.io/error/404.html">
-    <img src="../../../images/blog/post-22--4.gif" alt="New interactive 404 page">
+  <a href="https://console.wedeploy.com/oops" target="_blank">
+    <img src="../../../images/blog/post-22--4.gif" alt="New interactive 404 page" class="blog-img-shadow">
   </a>
 </figure>
 
@@ -62,13 +66,7 @@ When something goes wrong, users should not be jolted out of the 'reality' of ou
 
 #### Our Path
 
-Since the beginnings of this platform nearly 4 years ago, WeDeploy has undergone a massive evolution. We've added new services, updated the functionality, and made significant redesigns to our site that display our commitment to form that enhances functionality.
-
-Examples of this include the convenient feedback prompts on our documentation, the tasteful error pages when things go wrong, and even the interactive animations on our site that make exploring it fun and educational (If you have a few minutes, **[check it out!](https://wedeploy.com)**).
-
-<figure>
-  <img src="../../../images/blog/post-22--5.gif" alt="Interactive demos on the WeDeploy site">
-</figure>
+Since the beginnings of this platform nearly 3 years ago, WeDeploy has undergone a massive evolution. We've added new services, updated the functionality, and made significant redesigns to our site that display our commitment to form that enhances functionality.
 
 We're devoted to improving our platform, constantly working on new updates and releases to ensure that WeDeploy is the best it can be from top to bottom. We're happy to be alongside you every step of the way.
 
