@@ -3,14 +3,14 @@ title: "How Good Design Enhances Utility"
 description: "When building a great product, it inevitably becomes more and more important to consider design. Is the design pleasing? Is it clear? Does it inspire? And, most importantly, is the design of the product coherent with its purpose?"
 date: "March 12, 2018"
 author: "Jared Gorski"
-image: "../../../images/blog/post-22--6.jpg"
+image: "../../../images/blog/post-22--5.jpg"
 layout: "blog"
 ---
 
 <article>
 
 <figure style="margin-top: -1.5rem">
-  <img src="../../../images/blog/post-22--6.jpg" alt="Old 404 Error page morphing into new 404 Error page" class="blog-img-shadow">
+  <img src="../../../images/blog/post-22--5.jpg" alt="Old 404 Error page morphing into new 404 Error page" class="blog-img-shadow">
 </figure>
 
 {$page.description}
@@ -31,7 +31,7 @@ The WeDeploy CLI has long been the backbone of the WeDeploy experience. Our user
 As you can see below, our old CLI login page was rather bleak:
 
 <figure>
-  <img src="../../../images/blog/post-22--5.jpg" alt="Old WeDeploy CLI login landing page" class="blog-img-shadow">
+  <img src="../../../images/blog/post-22--4.jpg" alt="Old WeDeploy CLI login landing page" class="blog-img-shadow">
 </figure>
 
 This is our new CLI login page, featuring an interactive demo to prime those who may be new to our CLI, as well as links to more helpful resources. Plus, it's much more friendly to look at:
@@ -57,7 +57,7 @@ Contrast that with our **[newly designed 404 Error Page](https://console.wedeplo
 
 <figure>
   <a href="https://console.wedeploy.com/oops" target="_blank">
-    <img src="../../../images/blog/post-22--4.gif" alt="New interactive 404 page" class="blog-img-shadow">
+    <img src="../../../images/blog/post-22--3.jpg" alt="New interactive 404 page" class="blog-img-shadow">
   </a>
 </figure>
 
