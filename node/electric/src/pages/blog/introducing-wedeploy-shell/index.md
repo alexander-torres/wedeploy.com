@@ -1,9 +1,9 @@
 ---
 title: "Introducing WeDeploy Shell"
 description: "We are happy to announce a big improvement to our Console - now all the services you deploy have shell support out of the box. This is an exciting move forward and we can't wait to see what kind of opportunities this opens for our users to keep building amazing apps."
-date: "March 08, 2018"
+date: "March 16, 2018"
 author: "Ivan Santos"
-image: "/images/blog/post-22--0.gif"
+image: "/images/blog/post-22--0.png"
 layout: "blog"
 ---
 
@@ -11,21 +11,30 @@ layout: "blog"
 
 {$page.description}
 
-#### Why a Command-Line Tool
+<figure>
+  <img class="blog-img-shadow" src="/images/blog/post-22--0.png" alt="shell preview" />
+</figure>
 
 Command-line tools are fundamental for developer experience and productivity because they deliver speed, control, traceability, scripting and automation capabilities to the developer’s workflow.
 
-In many cases, it's challenging to get full visibility and control in your service. Shell access makes it easy to see whats going on inside your application, look for side effects that would not be easily spotted in the logs or even call functions like data population or report generation that are just meant to be performed once.
+In many cases, it's challenging to get full visibility and control of your service. Shell access makes it easy to see whats going on inside your application, look for side effects that would not be easily spotted in the logs or even call functions like data population or report generation that are just meant to be performed once.
 
 Now **WeDeploy Shell** provides you with secure, command-line access to your service directly from your browser so you can easily manage your service and perform commands just like you were logged into your server.
 
+#### Getting Started
+
+Imagine that you deploy a feature and need to import a CSV to populate a database or maybe you have a rails application and need to populate your data by typing: `rake db:seed`. Now you can seamlessly perform these types of tasks in your app.
+
 <figure>
-  <img src="/images/blog/post-22--0.png" alt="shell" />
+  <img class="blog-img-shadow" src="/images/blog/post-22--1.gif" alt="shell demo" />
 </figure>
 
-Imagine that you deploy a feature and need to import a CSV to populate a database. This is probably something you would want to do once in a while at a specific time. 
+Here are a few easy ways to start using it today. Try entering a Linux-based container (like any of our WeDeploy services) and explore these commands:
 
-Or maybe you have a rails application and need to populate your data by typing: `rake db:seed`. WeDeploy Shell allows you to perform these types of tasks in your app. The possibilities are endless and we are excited to see what you accomplish with this feature.
+1. `cd` or `cat` and the tab key to explore your files and feel the ease of autocomplete
+2. `ls` to see a color-coded list of all the files and folders in the current directory
+3. `uname -a` to see what version of Linux you're running
+4. `top` to see an interactive list of all running processes
 
 #### Shell Features
 
@@ -51,21 +60,8 @@ You may be wondering: "how do I enable this feature on my service?" No need to w
 
 The only persistent portion of your services is within the volumes. If you want to make permanent changes, you can install, save, or update any files inside of a [service volume](/docs/deploy/configuring-deployments/#volumes).
 
-#### Getting Started
+---
 
-With WeDeploy Shell, it's very easy to start interact with the content of your service or even create/change files inside your running service.
-
-<figure>
-  <img src="/images/blog/post-22--1.gif" alt="shell" />
-</figure>
-
-Here are a few easy ways to start using it today. Try entering a Linux-based container (like any of our WeDeploy services) and explore these commands.
-
-1. `cd` or `cat` and the tab key to explore your files and feel the ease of autocomplete
-2. `ls` to see a color-coded list of all the files and folders in the current directory
-3. `uname -a` to see what version of Linux you're running
-4. `top` to see an interactive list of all running processes
-
-**The possibilities are endless and we can't wait to see what you do with this new feature!**
+The possibilities are endless and we can't wait to see what you do with this new feature! If you need any help getting started or want to give us feedback, please **[join our WeDeploy Community](https://chat.wedeploy.com)**.
 
 </article>
