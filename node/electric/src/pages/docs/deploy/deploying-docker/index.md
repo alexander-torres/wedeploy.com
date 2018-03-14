@@ -118,7 +118,9 @@ Calling a public image from Docker Hub can be done with a single line of code in
 {
   "id": "mydb",
   "image": "mysql",
-  "volume": "/var/lib/mysql",
+  "volumes": {
+    "mysql": "/var/lib/mysql"
+  },
   "env": {
     "MYSQL_ROOT_PASSWORD": "pass"
   }

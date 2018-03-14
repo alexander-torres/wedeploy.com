@@ -80,7 +80,9 @@ Here are all the configuration keys in action within a `wedeploy.json`.
   "cpu": 2,
   "scale": 2,
   "memory": 2048,
-  "volume": "/opt/storage",
+  "volumes": {
+    "storage": "/opt/storage"
+  },
   "customDomains": ["myservice.com", "www.myservice.com"],
   "healthCheck": {
     "url": "localhost"
